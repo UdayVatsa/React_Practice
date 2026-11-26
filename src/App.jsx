@@ -1,13 +1,15 @@
+import { useState } from "react";
+
 function App(){
-  let count = 0;
+  let [count,setCount] = useState(0);
 
   function increment(){
-    count++;
+    setCount(count+1);
     console.log("Value of count: ", count);
   }
 
   function decrement(){
-    count--;
+    setCount(count-1);
     console.log("Value of count: ", count);
   }
 
